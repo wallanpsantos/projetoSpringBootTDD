@@ -40,9 +40,7 @@ public class CadastroPessoasTest {
         Pessoa pessoa = new Pessoa();
 
         //Execução e Verificação
-        assertThrows(PessoaSemNomeException.class, () -> {
-            cadastroPessoas.adicionaPessoa(pessoa);
-        });
+        assertThrows(PessoaSemNomeException.class, () -> cadastroPessoas.adicionaPessoa(pessoa));
     }
 
     @Test
@@ -52,23 +50,17 @@ public class CadastroPessoasTest {
         Pessoa pessoa = new Pessoa();
         pessoa.setNome("Dumbledore");
 
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.setNome("Goku");
+
+
         //Execução
-        cadastroPessoas.remove(pessoa);
+        cadastroPessoas.remove(pessoa1.getNome());
 
         //Verificação
         Assertions.assertThat(cadastroPessoas.getPessoas()).isEmpty();
+
+        System.out.println(pessoa1.getNome());
     }
 
-    @Test
-    public void erroRemovePessoaInexistente() {
-        //Cenario
-        CadastroPessoas cadastroPessoas = new CadastroPessoas();
-        Pessoa pessoa = new Pessoa();
-        pessoa.setNome("Potter");
-
-        //Execução e Verificação
-        assertThrows(PessoaInexistenteException.class, () -> {
-            cadastroPessoas.remove(pessoa);
-        });
-    }
 }

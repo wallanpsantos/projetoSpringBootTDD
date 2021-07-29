@@ -22,12 +22,12 @@ public class CadastroPessoas {
         this.pessoas.add(pessoa);
     }
 
-    public void remove(Pessoa pessoa) {
+    public void remove(String nomePessoa) {
 
-        if (Objects.isNull(pessoa)) {
+        if (Objects.isNull(nomePessoa)) {
             throw new PessoaInexistenteException();
         }
 
-        this.pessoas.remove(pessoa);
+        this.pessoas.remove(nomePessoa);
     }
 }
