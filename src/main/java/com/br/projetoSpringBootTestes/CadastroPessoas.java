@@ -1,4 +1,4 @@
-package com.br.projetoSpringBootTDD;
+package com.br.projetoSpringBootTestes;
 
 import java.util.ArrayList;
 import java.util.List;

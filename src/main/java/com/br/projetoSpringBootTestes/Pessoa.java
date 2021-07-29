@@ -1,4 +1,4 @@
-package com.br.projetoSpringBootTDD;
+package com.br.projetoSpringBootTestes;
 
 public class Pessoa {
     private String nome;

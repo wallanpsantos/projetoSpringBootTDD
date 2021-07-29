@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.br</groupId>
-    <artifactId>projetoSpringBootTDD</artifactId>
+    <artifactId>projetoSpringBootTestes</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>projetoSpringBootTDD</name>
+    <name>projetoSpringBootTestes</name>
     <description>Demo do curso Design de API&apos;s RestFul com Spring Boot, TDD e o novo JUnit5</description>
     <properties>
         <java.version>11</java.version>
